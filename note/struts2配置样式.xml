@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+<struts>
+	<!-- package:将Action封装，就是可以在package中配置多个Action
+			name属性：给包取名，不能重复
+			namespace属性：给Action的访问路径定义一个命名空间
+			extends属性：继承一个指令包 
+			abstract属性：包是否为抽象，是个标识属性，标识包不能独立运行，专门继承
+	-->
+	<package name="hello" namespace="/hello" extends="struts-default">
+		<!-- action元素：配置action类
+				name:决定action访问路径
+				class:action的完整类名
+				method：指定调用action的具体方法
+		 -->
+		<action name="HelloAtion" class="struts2_hello.HelloAction" method="hello">
+		<!--result元素:结果配置
+				 name属性：标识结果处理的名称，与action方法的返回值对应
+				 type属性：指定调用哪一个result来处理结果，默认使用转发
+				 标签体：填写页面的相对路径
+		 -->
+		<result name="success">/hello.jsp</result>
+		</action>
+	</package>
+</struts>

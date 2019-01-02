@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+	<!--xxx.cfg.xml-->
+<hibernate-configuration>
+	<session-factory>
+		<!-- 必选配置 -->
+		<!--#hibernate.dialect org.hibernate.dialect.MySQLDialect
+		#hibernate.dialect org.hibernate.dialect.MySQLInnoDBDialect
+		#hibernate.dialect org.hibernate.dialect.MySQLMyISAMDialect 
+		#hibernate.connection.driver_class com.mysql.jdbc.Driver
+		#hibernate.connection.url jdbc:mysql:///test
+		#hibernate.connection.username gavin
+		#hibernate.connection.password -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- localhost:3306可用///代替 -->
+		<property name="hibernate.connection.url">jdbc:mysql:///hibernate_day01</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">123456</property>
+		<!--数据方言，hibernate帮你生成合适的sql语句  （所有sql语句都遵行sql99标准：DDL(定义语言 库表的增删改查) DCL（控制语言 事务权限） DML（操作语言 增删改查））,mysql选择MySQLDialect-->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<!-- 可选配置 -->
+		<!-- #hibernate.show_sql true
+		## hibernate.format_sql true
+		 -->
+		 <!-- 把生成的sql语句打印到控制台 -->
+		<property name="hibernate.show_sql">true</property>
+		<!-- 格式化打印的sql语句 -->
+		<property name="hibernate.format_sql">true</property>
+
+		<!--事务隔离级别
+		## specify a JDBC isolation level
+		#hibernate.connection.isolation 4
+		0000	1	读未提交
+		0010	2	读已提交
+		0100	4	可重复读
+		1000	8	可串行
+		-->
+		<property name="hibernate.connection.isolation">4</property>
+
+		<!--确保session与当前线程绑定-->
+		<property name="hibernate.current_session_context_class">thread</property>
+		
+		
+		<!-- ## auto schema export 自动导出表结构，自动建表
+		#hibernate.hbm2ddl.auto create-drop 自动建表，每次框架运行完都删除，测试使用
+		#hibernate.hbm2ddl.auto create 自动建表，每次框架运行完都会覆盖掉原来的，会丢失数据，测试使用
+		#hibernate.hbm2ddl.auto update 自动生成表，如果有不会生成，有变动会自动跟新表，不会删除任何数据
+		#hibernate.hbm2ddl.auto validate 校验，不会自动创建表，校验数据库表是否匹配配置，否则抛出异常--> 
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<!-- 匹配orm元数据，填写src下的路径 -->
+		<mapping resource="javabean/Customer.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>

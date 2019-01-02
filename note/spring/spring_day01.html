@@ -1,0 +1,413 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>spring_day01</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="4b5hkjf29b0a0crdkctpcr4hsk">spring_day01</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="spring_day01_files/images/spring_day01.jpg"></div>
+<h2 class="topic">
+<a name="1vs42pclbs6nar970t967a8nse">spring介绍</a>
+</h2>
+<div class="overview">
+<img src="spring_day01_files/images/spring%E4%BB%8B%E7%BB%8D.jpg"></div>
+<h3 class="topic">
+<a name="762p1devrg8shaa4jkh8jhj8gh">&nbsp;三层架构中spring位置</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84%E4%B8%ADspring%E4%BD%8D%E7%BD%AE.jpg"></div>
+<h3 class="topic">
+<a name="64o0uj41r6f13di6vnetl2fhsj">&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="2elfde5rhsgrb7eaf5kun6gscs">&nbsp;spring一站式框架</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/spring%E4%B8%80%E7%AB%99%E5%BC%8F%E6%A1%86%E6%9E%B6.jpg"></div>
+<h3 class="topic">
+<a name="1don71ssilic0tajbmnonqopp7">&nbsp;&nbsp;正是因为spring框架性质是属于容器性质的.</a>
+</h3>
+<h3 class="topic">
+<a name="2k3bhsq9sp6oukgjga20hebi2c">&nbsp;&nbsp;容器中装什么对象就有什么功能.所以可以一站式.</a>
+</h3>
+<h3 class="topic">
+<a name="59urc81i0r7ppk3im3bcdgbfhe">&nbsp;&nbsp;不仅不排斥其他框架,还能帮其他框架管理对象.</a>
+</h3>
+<h3 class="topic">
+<a name="63o5mlic9enq49f57p9eajrund">&nbsp;&nbsp;aop支持</a>
+</h3>
+<h3 class="topic">
+<a name="4qo90q3vb92pq56002a8r2tgch">&nbsp;&nbsp;ioc思想'</a>
+</h3>
+<h3 class="topic">
+<a name="3ttatc0sajp77cj9l5e1bj6aqb">&nbsp;&nbsp;spring jdbc</a>
+</h3>
+<h3 class="topic">
+<a name="28rda1n65l25cufulfjj1ph090">&nbsp;&nbsp;aop 事务</a>
+</h3>
+<h3 class="topic">
+<a name="6ljgna1bgs5urd2fd55eur9p2q">&nbsp;&nbsp;junit 测试支持</a>
+</h3>
+<h2 class="topic">
+<a name="5immshbg8i2naapa0ah53iu2nj">spring搭建</a>
+</h2>
+<div class="overview">
+<img src="spring_day01_files/images/spring%E6%90%AD%E5%BB%BA.jpg"></div>
+<h3 class="topic">
+<a name="0kjdqgb582nturjnp6oigvi0a2">&nbsp;1.导包</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/1.%E5%AF%BC%E5%8C%85.jpg"></div>
+<h3 class="topic">
+<a name="0cljepni744gnqc0nees8bll5s">&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="1ru27op7gula7ap0i4oel57dmv">&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="2r9oss8mgjtt8unqbu5hluqd8f">&nbsp;&nbsp;日志包</a>
+</h3>
+<h3 class="topic">
+<a name="1qntcspdem6mlm2luelrke6vm1">&nbsp;&nbsp;com.springsource.org.apache.log4j-1.2.15.jar&#13;
+可选</a>
+</h3>
+<h3 class="topic">
+<a name="6qp8qib3hd1a9m7bgqdlva6oav">&nbsp;2.创建一个对象</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/2.%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1.jpg"></div>
+<h3 class="topic">
+<a name="45b0onnqqikrg3ctlnk8qqkc39">&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="46opi7hisbh2v8rdq12usv8hut">&nbsp;3.书写配置注册对象到容器</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/3.%E4%B9%A6%E5%86%99%E9%85%8D%E7%BD%AE%E6%B3%A8%E5%86%8C%E5%AF%B9%E8%B1%A1%E5%88%B0%E5%AE%B9%E5%99%A8.jpg"></div>
+<h3 class="topic">
+<a name="3ejnsejpthqv5vm4morgosj9e9">&nbsp;&nbsp;位置任意(建议放到src下)&#13;
+配置文件名任意(建议applicationContext.xml)</a>
+</h3>
+<h3 class="topic">
+<a name="0qv7ivpul09n03efj484d0smni">&nbsp;&nbsp;导入约束</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E5%AF%BC%E5%85%A5%E7%BA%A6%E6%9D%9F.jpg"></div>
+<h3 class="topic">
+<a name="7b2rurelpjshmlpdv8d5cvukvv">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="1s0n15a9e1h6hu0rr88mn5eeej">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="78u680ooqtg9cvrpmrj3f60097">&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="59agi7ii1ei0knv0n72deu95o3">&nbsp;4.代码测试</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/4.%E4%BB%A3%E7%A0%81%E6%B5%8B%E8%AF%95.jpg"></div>
+<h3 class="topic">
+<a name="177m6t965cki518r5k9frg1lgi">&nbsp;&nbsp;</a>
+</h3>
+<h2 class="topic">
+<a name="6f1vg555kl22sm7g1e50af5rtl">spring概念</a>
+</h2>
+<div class="overview">
+<img src="spring_day01_files/images/spring%E6%A6%82%E5%BF%B5.jpg"></div>
+<h3 class="topic">
+<a name="2q86nu74sed4ioaf9vt7k31oeb">&nbsp;思想</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E6%80%9D%E6%83%B3.jpg"></div>
+<h3 class="topic">
+<a name="2a3tr7b1uk676qmaca3gggdo96">&nbsp;&nbsp;ioc</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/ioc.jpg"></div>
+<h3 class="topic">
+<a name="2330n9f66j7u3cbas33snbma5d">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="1j6g7lf1a9r0ue160v9csbmf25">&nbsp;&nbsp;di</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/di.jpg"></div>
+<h3 class="topic">
+<a name="5ihh1ssebv4kuk6c5hulac4c75">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="5rueu0drgjnnjh5bv5asjs37id">&nbsp;applicationContext&amp;BeanFactory</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/applicationContext&amp;BeanFactory.jpg"></div>
+<h3 class="topic">
+<a name="2rj6gc1o58fd8rmocao9qkqgcf">&nbsp;&nbsp;BeanFactory接口</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/BeanFactory%E6%8E%A5%E5%8F%A3.jpg"></div>
+<h3 class="topic">
+<a name="6idqbbevhhjpbdjkh7p94djm99">&nbsp;&nbsp;&nbsp;spring原始接口.针对原始接口的实现类功能较为单一</a>
+</h3>
+<h3 class="topic">
+<a name="1bcn1e83ututbtfijpe010nbfp">&nbsp;&nbsp;&nbsp;BeanFactory接口实现类的容器.特点是每次在获得对象时才会创建对象</a>
+</h3>
+<h3 class="topic">
+<a name="78cpusq7pmfai8k33dm1bbemqk">&nbsp;&nbsp;ApplicationContext</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/ApplicationContext.jpg"></div>
+<h3 class="topic">
+<a name="1m61rvt9f8pir8a2njug48so6n">&nbsp;&nbsp;&nbsp;每次容器启动时就会创建容器中配置的所有对象.并提供更多功能</a>
+</h3>
+<h3 class="topic">
+<a name="31uog1qq2635kqk7ebofrksdcf">&nbsp;&nbsp;&nbsp;丛类路径下加载配置文件:ClassPathXmlApplicationContext</a>
+</h3>
+<h3 class="topic">
+<a name="4m4dhi5l9lrt4t85nib5a3f9pb">&nbsp;&nbsp;&nbsp;从硬盘绝对路径下加载配置文件:FileSystemXmlApplicationContext("d:/xxx/yyy/xxx")</a>
+</h3>
+<h3 class="topic">
+<a name="39bfcj85a7g0guiunigidoulii">&nbsp;&nbsp;结论:web开发中,使用applicationContext. 在资源匮乏的环境可以使用BeanFactory.</a>
+</h3>
+<h2 class="topic">
+<a name="2jte32qhnvqh0j99jnl6chfe94">spring配置详解</a>
+</h2>
+<div class="overview">
+<img src="spring_day01_files/images/spring%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3.jpg"></div>
+<h3 class="topic">
+<a name="6aod6jfjs9ot79mhv5tehj66iu">&nbsp;Bean元素</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/Bean%E5%85%83%E7%B4%A0.jpg"></div>
+<h3 class="topic">
+<a name="2p3cit706d72rgrdmd6lt278m7">&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="6tvjoo5akjqpp36mvu9qkqe56d">&nbsp;Bean元素进阶</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/Bean%E5%85%83%E7%B4%A0%E8%BF%9B%E9%98%B6.jpg"></div>
+<h3 class="topic">
+<a name="3i8o6vghbhihfiir3dt3fecbrp">&nbsp;&nbsp;scope属性</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/scope%E5%B1%9E%E6%80%A7.jpg"></div>
+<h3 class="topic">
+<a name="07pueu1khllc9p44s779gqdfim">&nbsp;&nbsp;&nbsp;singleton(默认值):单例对象.被标识为单例的对象在spring容器中只会存在一个实例</a>
+</h3>
+<h3 class="topic">
+<a name="5a15jteem40ur7euonjehprp6m">&nbsp;&nbsp;&nbsp;prototype:多例原型.被标识为多例的对象,每次再获得才会创建.每次创建都是新的对象.整合struts2时,ActionBean必须配置为多例的.</a>
+</h3>
+<h3 class="topic">
+<a name="3k25ddipi1iijqal7d5ff874cs">&nbsp;&nbsp;&nbsp;request:web环境下.对象与request生命周期一致.</a>
+</h3>
+<h3 class="topic">
+<a name="5ljr6nfepl1qkfuqf6ljhc58hl">&nbsp;&nbsp;&nbsp;session:web环境下,对象与session生命周期一致.</a>
+</h3>
+<h3 class="topic">
+<a name="22ab5fdc7q9g8jmtcktilvp373">&nbsp;&nbsp;生命周期属性</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%B1%9E%E6%80%A7.jpg"></div>
+<h3 class="topic">
+<a name="6eiq0if2is8escd8pceopd3dug">&nbsp;&nbsp;&nbsp;配置一个方法作为生命周期初始化方法.spring会在对象创建之后立即调用.</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E4%BD%9C%E4%B8%BA%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E6%B3%95.spring%E4%BC%9A%E5%9C%A8%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E4%B9%8B%E5%90%8E%E7%AB%8B%E5%8D%B3%E8%B0%83%E7%94%A8..jpg"></div>
+<h3 class="topic">
+<a name="2crpjh1gu3l3gppduo26bmu7vk">&nbsp;&nbsp;&nbsp;&nbsp;init-method</a>
+</h3>
+<h3 class="topic">
+<a name="5o348n0rhitkjj7lar0cbu9jn0">&nbsp;&nbsp;&nbsp;配置一个方法作为生命周期的销毁方法.spring容器在关闭并销毁所有容器中的对象之前调用.</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E4%BD%9C%E4%B8%BA%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E9%94%80%E6%AF%81%E6%96%B9%E6%B3%95.spring%E5%AE%B9%E5%99%A8%E5%9C%A8%E5%85%B3%E9%97%AD%E5%B9%B6%E9%94%80%E6%AF%81%E6%89%80%E6%9C%89%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%89%8D%E8%B0%83%E7%94%A8..jpg"></div>
+<h3 class="topic">
+<a name="27b95u6lkvahastaean3be29ua">&nbsp;&nbsp;&nbsp;&nbsp;destory-method</a>
+</h3>
+<h3 class="topic">
+<a name="6vq6iiupqvp9m168rfbnfe8dhq">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="549q5g6m9vldt4i8lqm1c6q26t">&nbsp;spring创建对象的方式</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/spring%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%96%B9%E5%BC%8F.jpg"></div>
+<h3 class="topic">
+<a name="4sch1k1avbam11quujik6urugd">&nbsp;&nbsp;1.空参构造方式</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/1.%E7%A9%BA%E5%8F%82%E6%9E%84%E9%80%A0%E6%96%B9%E5%BC%8F.jpg"></div>
+<h3 class="topic">
+<a name="6s5rhtp3nqaog4ihjn8hdt849i">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="2f3f2bcc1epdapv7q5acvkl26f">&nbsp;&nbsp;2.静态工厂(了解)</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/2.%E9%9D%99%E6%80%81%E5%B7%A5%E5%8E%82(%E4%BA%86%E8%A7%A3).jpg"></div>
+<h3 class="topic">
+<a name="376uj6isjr7m1lb82829tol1r4">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="3o0mia66d0hjd2cvgpn8dpukh5">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="0edikkhaispb5e7t83eu3845i9">&nbsp;&nbsp;3.实例工厂(了解)</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/3.%E5%AE%9E%E4%BE%8B%E5%B7%A5%E5%8E%82(%E4%BA%86%E8%A7%A3).jpg"></div>
+<h3 class="topic">
+<a name="5ekeu50fhbji9qc9cp1jlbqsbg">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="3lrula588fgufrtimhpafrdstl">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="1e5169gam1aa3oe5s9jcnr9q02">&nbsp;spring的分模块配置</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/spring%E7%9A%84%E5%88%86%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE.jpg"></div>
+<h3 class="topic">
+<a name="3ut9v32jqal0qs88orkiu5maem">&nbsp;&nbsp;</a>
+</h3>
+<h2 class="topic">
+<a name="5vc349ld76aqsvcfc0khet390q">spring属性注入</a>
+</h2>
+<div class="overview">
+<img src="spring_day01_files/images/spring%E5%B1%9E%E6%80%A7%E6%B3%A8%E5%85%A5.jpg"></div>
+<h3 class="topic">
+<a name="7d8u8ak8ogmfesbe2076kptl44">&nbsp;注入方式</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F.jpg"></div>
+<h3 class="topic">
+<a name="0mom2kf3bcfqmdlddhrbhv2vpk">&nbsp;&nbsp;set方法注入</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/set%E6%96%B9%E6%B3%95%E6%B3%A8%E5%85%A5.jpg"></div>
+<h3 class="topic">
+<a name="6l8f991i3mdo699sobj8t9celd">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="020k3orts3tothp95c6e85rp88">&nbsp;&nbsp;构造函数注入</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%B3%A8%E5%85%A5.jpg"></div>
+<h3 class="topic">
+<a name="6pdr9m7ki6a7lrrvvuardb2cn7">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="2770ll7cc6e4i9co0qah6tpsvu">&nbsp;&nbsp;p名称空间注入</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/p%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4%E6%B3%A8%E5%85%A5.jpg"></div>
+<h3 class="topic">
+<a name="3h9fq5m4kg7bc1oafdl7iiit5f">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="1bf2fc069ljqepdujdpvghup0v">&nbsp;&nbsp;spel注入</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/spel%E6%B3%A8%E5%85%A5.jpg"></div>
+<h3 class="topic">
+<a name="1rf7avoipaafhvgs3oqt96r8ol">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="2jlkss1arg9muebedomv9ppqao">&nbsp;复杂类型注入</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E5%A4%8D%E6%9D%82%E7%B1%BB%E5%9E%8B%E6%B3%A8%E5%85%A5.jpg"></div>
+<h3 class="topic">
+<a name="1jn64l5kh961vahrn0p9bdt4g1">&nbsp;&nbsp;数组</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E6%95%B0%E7%BB%84.jpg"></div>
+<h3 class="topic">
+<a name="6ffd90umrj1k1m2aplmfjodp1i">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="1e7k7n0ainju6sjrm9s4lmd2oc">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="70s2hfvjlucka8v7rh6n1fve8a">&nbsp;&nbsp;List</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/List.jpg"></div>
+<h3 class="topic">
+<a name="73hdtccq1hg0mgehg8nnilp4sh">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="0075gclufji367jme1ml41j41r">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="1t02l183np0fi0ag6e3gsa8u72">&nbsp;&nbsp;Map</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/Map.jpg"></div>
+<h3 class="topic">
+<a name="0ln6k1f5vqnp42v16ki7rb3shd">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="07lc2fdp4b3ueuokbe6bn7vklv">&nbsp;&nbsp;Properties</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/Properties.jpg"></div>
+<h3 class="topic">
+<a name="14utt9ps793uclnhqnvs2aoa54">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h2 class="topic">
+<a name="6nbj2lmb97fbnn0rjq31lf5s73">练习:将spring容器应用到struts-crm项目</a>
+</h2>
+<div class="overview">
+<img src="spring_day01_files/images/%E7%BB%83%E4%B9%A0 %E5%B0%86spring%E5%AE%B9%E5%99%A8%E5%BA%94%E7%94%A8%E5%88%B0struts-crm%E9%A1%B9%E7%9B%AE.jpg"></div>
+<h3 class="topic">
+<a name="49d94ura68a4o9dic61goppga1">&nbsp;管理Service对象以及Dao对象</a>
+</h3>
+<h3 class="topic">
+<a name="5snmov9joqqg7jdsgbr1ol7s0e">&nbsp;步骤</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E6%AD%A5%E9%AA%A4.jpg"></div>
+<h3 class="topic">
+<a name="6t2dul16pupksukiq7orpt3t9u">&nbsp;&nbsp;1.导包(4+2),再加1</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/1.%E5%AF%BC%E5%8C%85(4+2),%E5%86%8D%E5%8A%A01.jpg"></div>
+<h3 class="topic">
+<a name="0rq72cp9u16j2e6g50ee5rcc6l">&nbsp;&nbsp;&nbsp;spring-web-4.2.4.RELEASE.jar</a>
+</h3>
+<h3 class="topic">
+<a name="3c6i2c5b6kott07f57lrkpb9k6">&nbsp;&nbsp;2.将Service对象以及Dao对象配置到spring容器</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/2.%E5%B0%86Service%E5%AF%B9%E8%B1%A1%E4%BB%A5%E5%8F%8ADao%E5%AF%B9%E8%B1%A1%E9%85%8D%E7%BD%AE%E5%88%B0spring%E5%AE%B9%E5%99%A8.jpg"></div>
+<h3 class="topic">
+<a name="4297gf0i8557qmhmgs4ltu2udr">&nbsp;&nbsp;&nbsp;</a>
+</h3>
+<h3 class="topic">
+<a name="6g28mmim6l7onf3jk93l83uj63">&nbsp;&nbsp;3.在Action中获得容器中的Service对象</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/3.%E5%9C%A8Action%E4%B8%AD%E8%8E%B7%E5%BE%97%E5%AE%B9%E5%99%A8%E4%B8%AD%E7%9A%84Service%E5%AF%B9%E8%B1%A1.jpg"></div>
+<h3 class="topic">
+<a name="6o3oiv5i52f9smvlc1o4a1mr2u">&nbsp;&nbsp;&nbsp;web.xml中配置容器随项目启动</a>
+</h3>
+<h3 class="topic">
+<a name="3b2q9vnvpgn9hfckebkie9m85i">&nbsp;&nbsp;&nbsp;在Action中获得容器</a>
+</h3>
+<h3 class="topic">
+<a name="75ef1mh8r2r41met32g3eccrib">&nbsp;管理容器在项目中的生命周期</a>
+</h3>
+<div class="overview">
+<img src="spring_day01_files/images/%E7%AE%A1%E7%90%86%E5%AE%B9%E5%99%A8%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.jpg"></div>
+<h3 class="topic">
+<a name="0m6bjsh4m3uo11dheacaucq7cv">&nbsp;&nbsp;这是错误的示范.导致每次请求都创建新的容器</a>
+</h3>
+</body>
+</html>

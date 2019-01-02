@@ -1,0 +1,9 @@
+CREATE TABLE cst_customer(
+cust_id bigint(32) NOT NULL AUTO_INCREMENT COMMENT '客户编号（主键)',
+cust_name varchar(32) NOT NULL COMMENT '客户名称',
+cust_source varchar(32) DEFAULT NULL COMMENT '客户来源',
+cust_industry varchar(32) DEFAULT NULL COMMENT '客户所属行业',
+cust_level varchar(32) DEFAULT NULL COMMENT '客户级别',
+cust_phone varchar(32) DEFAULT NULL COMMENT '客户电话',
+primary key(cust_id)
+) ENGINE=Innodb AUTO_INCREMENT=94 DEFAULT CHARSET=UTF8;
